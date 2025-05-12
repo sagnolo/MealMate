@@ -1,4 +1,10 @@
 package com.sagnol.mealmate.core.model
 
-class Nutrient {
-}
+data class Nutrient(
+    val calories: Int = 0,
+    val carbs: Int = 0,
+    val protein: Int = 0,
+    val fat: Int = 0,
+    val sugar: Int = 0,
+    val sodium: Int = 0
+)

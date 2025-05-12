@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.sagnol.core.domain"
+    namespace = "com.sagnol.mealmate.core.domain"
     compileSdk = 35
 
     defaultConfig {
-        minSdk = 24
+        minSdk = 26
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
@@ -42,4 +42,5 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.javax.inject)
 }

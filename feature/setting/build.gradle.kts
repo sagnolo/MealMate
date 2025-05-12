@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.sagnol.feature.setting"
+    namespace = "com.sagnol.mealmate.feature.setting"
     compileSdk = 35
 
     defaultConfig {
-        minSdk = 24
+        minSdk = 26
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
