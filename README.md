@@ -84,7 +84,7 @@ MealMate/
 ## ✅ 개발 진행 현황
 
 - [x] 프로젝트 모듈 구조 및 Gradle 설정 완료
-- [ ] Meal 모델 및 Repository 구조 설계
+- [x] Meal 모델 및 Repository 구조 설계
 - [ ] 식단 입력 기능 구현 (ViewModel + UI)
 - [ ] 캘린더 기반 조회 기능 연결
 - [ ] DataStore 설정 저장 기능 구현
