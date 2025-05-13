@@ -1,4 +1,11 @@
-package com.sagnol.feature.input
+package com.sagnol.mealmate.feature.input
 
-class InputUiState {
-}
+import com.sagnol.mealmate.core.model.Nutrient
+import java.time.LocalDate
+
+data class InputUiState(
+    val title: String = "",
+    val nutrient: Nutrient = Nutrient(),
+    val time: String = "아침",
+    val date: LocalDate = LocalDate.now()
+)
