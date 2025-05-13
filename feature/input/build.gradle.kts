@@ -32,6 +32,9 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+    buildFeatures {
+        compose = true
+    }
 }
 
 dependencies {
@@ -44,10 +47,15 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.material3)
     testImplementation(libs.junit)
+    debugImplementation(libs.androidx.ui.tooling)
+    implementation(libs.androidx.ui.graphics)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    androidTestImplementation(platform(libs.androidx.compose.bom))
+    implementation(platform(libs.androidx.compose.bom))
 
     implementation(libs.androidx.navigation.compose)
     implementation(libs.hilt.android)
     ksp(libs.hilt.android.compiler)
+    implementation(libs.androidx.hilt.navigation.compose)
 }

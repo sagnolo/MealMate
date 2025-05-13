@@ -1,4 +1,4 @@
-package com.sagnol.core.ui.theme
+package com.sagnol.mealmate.core.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
