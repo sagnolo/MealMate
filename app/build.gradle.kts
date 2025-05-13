@@ -39,6 +39,9 @@ android {
     buildFeatures {
         compose = true
     }
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.5.13" // ✅ Compose Compiler 버전 (Kotlin 2.0과 호환)
+    }
 }
 
 dependencies {
@@ -71,4 +74,5 @@ dependencies {
     implementation(libs.hilt.android)
     ksp(libs.hilt.android.compiler)
     implementation(libs.androidx.hilt.navigation.compose)
+    implementation(libs.androidx.compose.compiler)
 }
