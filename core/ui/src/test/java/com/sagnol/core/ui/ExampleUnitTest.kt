@@ -1,4 +1,4 @@
-package com.sagnol.core.ui
+package com.sagnol.mealmate.core.ui
 
 import org.junit.Test
 

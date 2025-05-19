@@ -7,5 +7,5 @@ data class InputUiState(
     val title: String = "",
     val nutrient: Nutrient = Nutrient(),
     val time: String = "아침",
-    val date: LocalDate = LocalDate.now()
+    val date: String = "",
 )

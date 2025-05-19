@@ -1,4 +1,4 @@
-package com.sagnol.feature.input
+package com.sagnol.mealmate.feature.input
 
 import org.junit.Test
 

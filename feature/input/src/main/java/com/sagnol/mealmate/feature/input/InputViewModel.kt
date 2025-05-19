@@ -1,16 +1,16 @@
-package com.sagnol.feature.input
+package com.sagnol.mealmate.feature.input
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.sagnol.core.domain.usecase.InsertMealUseCase
+import com.sagnol.mealmate.core.domain.usecase.InsertMealUseCase
 import com.sagnol.mealmate.core.model.Meal
-import com.sagnol.mealmate.feature.input.InputUiState
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.asSharedFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
-import java.time.LocalDate
 import javax.inject.Inject
 
 @HiltViewModel
@@ -20,6 +20,9 @@ class InputViewModel @Inject constructor(
 
     private val _uiState = MutableStateFlow(InputUiState())
     val uiState: StateFlow<InputUiState> = _uiState
+
+    private val _event = MutableSharedFlow<InputUiEvent>()
+    val event = _event.asSharedFlow()
 
     fun updateTitle(title: String) {
         _uiState.update { it.copy(title = title) }
@@ -47,7 +50,7 @@ class InputViewModel @Inject constructor(
         _uiState.update { it.copy(time = time) }
     }
 
-    fun updateDate(date: LocalDate) {
+    fun updateDate(date: String) {
         _uiState.update { it.copy(date = date)}
     }
 
@@ -61,6 +64,7 @@ class InputViewModel @Inject constructor(
                 date = state.date
             )
             insertMealUseCase.invoke(meal)
+            _event.emit(InputUiEvent.SaveSuccess) // ✅ 이벤트 발생
         }
     }
 

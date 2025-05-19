@@ -1,4 +1,4 @@
-package com.sagnol.core.domain
+package com.sagnol.mealmate.core.domain
 
 import org.junit.Test
 

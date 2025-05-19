@@ -85,8 +85,8 @@ MealMate/
 
 - [x] 프로젝트 모듈 구조 및 Gradle 설정 완료
 - [x] Meal 모델 및 Repository 구조 설계
-- [ ] 식단 입력 기능 구현 (ViewModel + UI)
-- [ ] 캘린더 기반 조회 기능 연결
+- [x] 식단 입력 기능 구현 (ViewModel + UI)
+- [x] 캘린더 기반 조회 기능 연결
 - [ ] DataStore 설정 저장 기능 구현
 - [ ] 테스트 코드 작성 (UseCase, ViewModel)
 - [ ] Firebase 연동 (Auth, Firestore, Storage)

@@ -1,6 +1,6 @@
-package com.sagnol.core.domain.usecase
+package com.sagnol.mealmate.core.domain.usecase
 
-import com.sagnol.core.domain.repository.MealRepository
+import com.sagnol.mealmate.core.domain.repository.MealRepository
 import com.sagnol.mealmate.core.model.Meal
 import javax.inject.Inject
 

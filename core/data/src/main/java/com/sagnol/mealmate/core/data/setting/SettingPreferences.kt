@@ -1,4 +1,4 @@
-package com.sagnol.core.data.setting
+package com.sagnol.mealmate.core.data.setting
 
 import android.content.Context
 import androidx.datastore.preferences.preferencesDataStore

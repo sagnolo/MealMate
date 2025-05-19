@@ -1,4 +1,4 @@
-package com.sagnol.core.data.database
+package com.sagnol.mealmate.core.data.database
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
@@ -14,5 +14,5 @@ data class MealEntity(
     val sugar: Int,
     val sodium: Int,
     val time: String,
-    val date: String // LocalDate → String 저장
+    val date: String
 )

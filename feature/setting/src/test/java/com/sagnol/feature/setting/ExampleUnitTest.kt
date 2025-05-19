@@ -1,4 +1,4 @@
-package com.sagnol.feature.setting
+package com.sagnol.mealmate.feature.setting
 
 import org.junit.Test
 

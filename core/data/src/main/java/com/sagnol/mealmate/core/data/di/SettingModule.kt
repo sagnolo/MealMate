@@ -1,4 +1,4 @@
-package com.sagnol.core.data.di
+package com.sagnol.mealmate.core.data.di
 
 object SettingModule {
 }

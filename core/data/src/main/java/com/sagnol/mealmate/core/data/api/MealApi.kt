@@ -1,4 +1,4 @@
-package com.sagnol.core.data.api
+package com.sagnol.mealmate.core.data.api
 
 class MealApi {
 }

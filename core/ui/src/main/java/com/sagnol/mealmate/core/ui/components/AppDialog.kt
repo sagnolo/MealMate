@@ -1,4 +1,4 @@
-package com.sagnol.core.ui.components
+package com.sagnol.mealmate.core.ui.components
 
 class AppDialog {
 }

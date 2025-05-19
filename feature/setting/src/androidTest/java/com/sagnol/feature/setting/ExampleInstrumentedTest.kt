@@ -1,4 +1,4 @@
-package com.sagnol.feature.setting
+package com.sagnol.mealmate.feature.setting
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.sagnol.feature.setting.test", appContext.packageName)
+        assertEquals("com.sagnol.mealmate.feature.setting.test", appContext.packageName)
     }
 }

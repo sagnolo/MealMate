@@ -1,4 +1,4 @@
-package com.sagnol.feature.calendar
+package com.sagnol.mealmate.feature.calendar
 
 import org.junit.Test
 

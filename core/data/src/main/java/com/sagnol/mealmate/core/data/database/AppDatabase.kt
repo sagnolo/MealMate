@@ -1,4 +1,4 @@
-package com.sagnol.core.data.database
+package com.sagnol.mealmate.core.data.database
 
 import androidx.room.Database
 import androidx.room.RoomDatabase

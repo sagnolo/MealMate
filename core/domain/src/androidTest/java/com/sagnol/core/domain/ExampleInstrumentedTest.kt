@@ -1,4 +1,4 @@
-package com.sagnol.core.domain
+package com.sagnol.mealmate.core.domain
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.sagnol.core.domain.test", appContext.packageName)
+        assertEquals("com.sagnol.mealmate.core.domain.test", appContext.packageName)
     }
 }

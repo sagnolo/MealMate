@@ -1,7 +1,7 @@
-package com.sagnol.core.data.repository
+package com.sagnol.mealmate.core.data.repository
 
-import com.sagnol.core.data.database.MealDao
-import com.sagnol.core.domain.repository.MealRepository
+import com.sagnol.mealmate.core.data.database.MealDao
+import com.sagnol.mealmate.core.domain.repository.MealRepository
 import com.sagnol.mealmate.core.data.mapper.toEntity
 import com.sagnol.mealmate.core.data.mapper.toModel
 import com.sagnol.mealmate.core.model.Meal
@@ -13,7 +13,7 @@ import javax.inject.Inject
 class MealRepositoryImpl @Inject constructor(
     private val mealDao: MealDao
 ): MealRepository {
-    override fun getMealsByDate(date: LocalDate): Flow<List<Meal>> =
+    override fun getMealsByDate(date: String): Flow<List<Meal>> =
         mealDao.getMealsByDate(date.toString()).map { list->
             list.map { it.toModel() }
         }

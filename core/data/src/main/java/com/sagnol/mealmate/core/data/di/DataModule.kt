@@ -1,11 +1,11 @@
-package com.sagnol.core.data.di
+package com.sagnol.mealmate.core.data.di
 
 import android.content.Context
 import androidx.room.Room
-import com.sagnol.core.data.database.AppDatabase
-import com.sagnol.core.data.database.MealDao
-import com.sagnol.core.data.repository.MealRepositoryImpl
-import com.sagnol.core.domain.repository.MealRepository
+import com.sagnol.mealmate.core.data.database.AppDatabase
+import com.sagnol.mealmate.core.data.database.MealDao
+import com.sagnol.mealmate.core.data.repository.MealRepositoryImpl
+import com.sagnol.mealmate.core.domain.repository.MealRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

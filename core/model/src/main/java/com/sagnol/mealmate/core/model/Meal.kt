@@ -7,5 +7,5 @@ data class Meal(
     val title: String,
     val nutrient: Nutrient,
     val time: String, // 아침, 점심, 저녁
-    val date: LocalDate
+    val date: String
 )

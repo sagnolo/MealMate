@@ -1,4 +1,4 @@
-package com.sagnol.core.data
+package com.sagnol.mealmate.core.data
 
 import org.junit.Test
 

@@ -1,2 +1,2 @@
-package com.sagnol.feature.setting
+package com.sagnol.mealmate.feature.setting
 

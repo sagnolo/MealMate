@@ -1,6 +1,6 @@
 package com.sagnol.mealmate.core.data.mapper
 
-import com.sagnol.core.data.database.MealEntity
+import com.sagnol.mealmate.core.data.database.MealEntity
 import com.sagnol.mealmate.core.model.Meal
 import com.sagnol.mealmate.core.model.Nutrient
 import java.time.LocalDate
@@ -17,7 +17,7 @@ fun MealEntity.toModel(): Meal = Meal(
         sodium = sodium
     ),
     time = time,
-    date = LocalDate.parse(date)
+    date = date
 )
 
 fun Meal.toEntity(): MealEntity = MealEntity(
@@ -30,5 +30,5 @@ fun Meal.toEntity(): MealEntity = MealEntity(
     sugar = nutrient.sugar,
     sodium = nutrient.sodium,
     time = time,
-    date = date.toString()
+    date = date
 )
