@@ -30,7 +30,7 @@ class InputViewModel @Inject constructor(
 
     fun updateNutrient(
         calories: Int? = null, carbs: Int? = null, protein: Int? = null,
-        fat: Int? = null, sugar: Int? = null, sodium: Int? = null
+        fat: Int? = null
     ) {
         _uiState.update {
             it.copy(
@@ -39,8 +39,6 @@ class InputViewModel @Inject constructor(
                     carbs = carbs ?: it.nutrient.carbs,
                     protein = protein ?: it.nutrient.protein,
                     fat = fat ?: it.nutrient.fat,
-                    sugar = sugar ?: it.nutrient.sugar,
-                    sodium = sodium ?: it.nutrient.sodium
                 )
             )
         }
@@ -64,7 +62,7 @@ class InputViewModel @Inject constructor(
                 date = state.date
             )
             insertMealUseCase.invoke(meal)
-            _event.emit(InputUiEvent.SaveSuccess) // ✅ 이벤트 발생
+            _event.emit(InputUiEvent.SaveSuccess)
         }
     }
 

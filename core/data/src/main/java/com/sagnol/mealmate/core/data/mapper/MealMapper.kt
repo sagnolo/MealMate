@@ -13,8 +13,6 @@ fun MealEntity.toModel(): Meal = Meal(
         carbs = carbs,
         protein = protein,
         fat = fat,
-        sugar = sugar,
-        sodium = sodium
     ),
     time = time,
     date = date
@@ -27,8 +25,6 @@ fun Meal.toEntity(): MealEntity = MealEntity(
     carbs = nutrient.carbs,
     protein = nutrient.protein,
     fat = nutrient.fat,
-    sugar = nutrient.sugar,
-    sodium = nutrient.sodium,
     time = time,
     date = date
 )

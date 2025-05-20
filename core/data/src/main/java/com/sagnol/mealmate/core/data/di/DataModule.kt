@@ -27,6 +27,7 @@ object DataModule {
         "mealmate-db"
     ).build()
 
+
     @Provides
     fun provideMealDao(db: AppDatabase): MealDao = db.mealDao()
 

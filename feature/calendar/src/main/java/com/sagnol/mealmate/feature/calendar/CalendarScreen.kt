@@ -93,8 +93,6 @@ fun CalendarScreen(
                             Text("탄수화물: ${meal.nutrient.carbs} g")
                             Text("단백질: ${meal.nutrient.protein} g")
                             Text("지방: ${meal.nutrient.fat} g")
-                            Text("당: ${meal.nutrient.sugar} g")
-                            Text("나트륨: ${meal.nutrient.sodium} g")
                         }
                     }
                 }

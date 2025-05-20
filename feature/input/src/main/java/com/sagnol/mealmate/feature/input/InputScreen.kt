@@ -1,6 +1,5 @@
 package com.sagnol.mealmate.feature.input
 
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -25,7 +24,6 @@ import androidx.compose.material3.rememberDatePickerState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
-import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -36,7 +34,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Popup
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
-import com.sagnol.mealmate.feature.input.InputUiEvent
 import com.sagnol.mealmate.feature.input.component.NutrientField
 import kotlinx.coroutines.flow.collectLatest
 import java.time.Instant
@@ -158,12 +155,6 @@ fun InputScreen(
         }
         NutrientField("지방 (g)", uiState.nutrient.fat) {
             viewModel.updateNutrient(fat = it)
-        }
-        NutrientField("당 (g)", uiState.nutrient.sugar) {
-            viewModel.updateNutrient(sugar = it)
-        }
-        NutrientField("나트륨 (mg)", uiState.nutrient.sodium) {
-            viewModel.updateNutrient(sodium = it)
         }
 
         Button(

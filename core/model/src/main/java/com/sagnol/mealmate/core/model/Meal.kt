@@ -1,7 +1,5 @@
 package com.sagnol.mealmate.core.model
 
-import java.time.LocalDate
-
 data class Meal(
     val id: Long = 0L,
     val title: String,
