@@ -53,6 +53,9 @@ class InputViewModel @Inject constructor(
     }
 
     fun saveMeal() {
+        val state = _uiState.value
+        if (state.title.isBlank() || state.date.isBlank() || state.time.isBlank()) return
+
         viewModelScope.launch {
             val state = _uiState.value
             val meal = Meal(
@@ -61,7 +64,7 @@ class InputViewModel @Inject constructor(
                 time = state.time,
                 date = state.date
             )
-            insertMealUseCase.invoke(meal)
+            insertMealUseCase(meal)
             _event.emit(InputUiEvent.SaveSuccess)
         }
     }

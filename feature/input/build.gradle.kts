@@ -48,6 +48,8 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.material3)
     testImplementation(libs.junit)
+    testImplementation(libs.turbine)
+    testImplementation(libs.coroutine.test)
     debugImplementation(libs.androidx.ui.tooling)
     implementation(libs.androidx.ui.graphics)
     androidTestImplementation(libs.androidx.junit)
@@ -59,4 +61,5 @@ dependencies {
     implementation(libs.hilt.android)
     ksp(libs.hilt.android.compiler)
     implementation(libs.androidx.hilt.navigation.compose)
+    testImplementation(kotlin("test"))
 }
