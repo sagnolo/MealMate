@@ -33,7 +33,7 @@ class CalendarViewModel @Inject constructor(
         _date.value = newDate
     }
 
-    private fun fetchMeals() {
+    fun fetchMeals() {
         viewModelScope.launch {
             _date.flatMapLatest { date ->
                 getMealsByDateUseCase(date)
