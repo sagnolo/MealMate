@@ -37,6 +37,7 @@ MealMate/
 │   ├── domain/           # 비즈니스 로직 계층 (UseCase, Repository 인터페이스)
 │   ├── data/             # Room, Retrofit 등의 구현체 (RepositoryImpl 등)
 │   └── ui/               # 공통 UI 컴포넌트 및 테마
+│   └── test/             # 테스트용 FakeRepository 등
 ├── feature/
 │   ├── input/            # 식단 입력 화면
 │   ├── calendar/         # 날짜별 식단 조회 화면
@@ -88,7 +89,7 @@ MealMate/
 - [x] 식단 입력 기능 구현 (ViewModel + UI)
 - [x] 캘린더 기반 조회 기능 연결
 - [x] DataStore 설정 저장 기능 구현
-- [ ] 테스트 코드 작성 (UseCase, ViewModel)
+- [x] 테스트 코드 작성 (UseCase, ViewModel)
 - [ ] Firebase 연동 (Auth, Firestore, Storage)
 - [ ] GitHub Actions CI/CD 연동
 

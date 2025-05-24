@@ -4,6 +4,10 @@ import com.sagnol.mealmate.core.domain.usecase.GetMealsByDateUseCase
 import com.sagnol.mealmate.core.model.Meal
 import com.sagnol.mealmate.core.model.Nutrient
 import com.sagnol.mealmate.feature.calendar.CalendarViewModel
+import junit.framework.TestCase.assertEquals
+import junit.framework.TestCase.assertTrue
+import kotlinx.coroutines.ExperimentalCoroutinesApi
+import kotlinx.coroutines.test.advanceUntilIdle
 import kotlinx.coroutines.test.runTest
 import org.junit.Before
 import org.junit.Test
@@ -20,6 +24,7 @@ class CalendarViewModelTest {
         viewModel = CalendarViewModel(useCase)
     }
 
+    @OptIn(ExperimentalCoroutinesApi::class)
     @Test
     fun `loadMeals`() = runTest {
         val date = "2025-05-22"
@@ -40,6 +45,7 @@ class CalendarViewModelTest {
         assertEquals("김밥", meals[0].title)
     }
 
+    @OptIn(ExperimentalCoroutinesApi::class)
     @Test
     fun `updateDate return empty list`() = runTest {
         viewModel.updateDate("2024-01-01")
